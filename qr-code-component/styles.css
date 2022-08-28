@@ -1,0 +1,20 @@
+*,
+*::before,
+*::after { 
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+:root { 
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-light-gray: hsl(212, 45%, 89%);
+  --clr-grayish-blue: hsl(220, 15%, 55%);
+  --clr-dark-blue: hsl(218, 44%, 22%);
+
+  --fs-normal: 15px;
+
+  --ff-main: url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+  --fw-normal: 400;
+  --fw-bold: 700;
+}
