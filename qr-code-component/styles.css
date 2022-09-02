@@ -18,3 +18,35 @@
   --fw-normal: 400;
   --fw-bold: 700;
 }
+
+html, body { 
+  min-width: 100vw;
+  min-height: 100vh;
+  font-family: var(--ff-main);
+  font-size: var(--fs-normal);
+  background-color: var(--clr-light-gray);
+}
+
+
+.container1 { 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  background-color: var(--clr-white);
+  justify-content: center;
+  align-items: center;
+}
+
+.qr-code-container { 
+  
+}
+.attribution { 
+  position: fixed;
+  bottom: 0px;
+  height: 30px;
+  width: 100%;
+  text-align: center;
+}
