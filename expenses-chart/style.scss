@@ -1,0 +1,94 @@
+*,
+*::before,
+*::after { 
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+// Custom colors
+$primary-color-red: hsl(10, 79%, 65%);
+$primary-color-cyan: hsl(186, 34%, 60%);
+$neutral-dark-brown: hsl(25, 47%, 15%);
+$neutral-medium-brown: hsl(28, 10%, 53%);
+$neutral-cream: hsl(27, 66%, 92%);
+$neutral-very-pale-orange: hsl(33, 100%, 98%);
+
+// Custom fonts
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+$fs: 18px;
+$ff: 'DM Sans', sans-serif;
+$fw-reg: 400;
+$fw-bold: 700;
+
+:root { 
+
+}
+
+body { 
+  font-size: $fs;
+  font-family: $ff;
+  font-weight: $fw-reg;
+}
+
+.container { 
+  width: 100vw;
+  height: 100vh;
+  background: $neutral-cream;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.balance-container { 
+  width: 24rem;
+  height: 4rem;
+  padding: 2rem;
+  display: flex;
+  border-radius: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $primary-color-red;
+  margin-bottom: 1rem;
+  
+}
+
+.mybalance-text { 
+  font-size: 1rem;
+  font-weight: $fw-reg;
+}
+
+.balance-text { 
+  font-weight: $fw-bold;
+}
+
+.mybalance-left-container { 
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.logo { 
+  float: left;
+}
+
+.spending-container { 
+  display: flex;
+  background-color: $neutral-very-pale-orange;
+  color: black;
+}
+
+.spending-text { 
+  font-size: $fw-bold;
+}
+
+.weekly { 
+  
+}
+
+.total { 
+
+}
