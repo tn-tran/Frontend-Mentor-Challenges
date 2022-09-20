@@ -1,3 +1,4 @@
+$fs-h1: 9.375rem;
 :root {
 	// colors
 	--clr-primary: rgb(11, 13, 23);
@@ -29,4 +30,15 @@
 	--word-spacing-h5: 0.296875rem;
 	--word-spacing-subheading2: 0.146875rem;
 	--word-spacing-reg: 0.16875rem;
+}
+body {
+	font-size: var(--fs);
+	font-family: var(--ff-primary);
+}
+.container {
+	font-family: var(--ff-primary);
+}
+.title {
+	font-size: $fs-h1;
+	color: red;
 }
