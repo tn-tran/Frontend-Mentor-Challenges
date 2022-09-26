@@ -1,7 +1,7 @@
 // Colors
 $clr-primary: rgb(11, 13, 23);
 $clr-secondary: rgb(208, 214, 249);
-$clr-accent: (255, 255, 255);
+$clr-accent: rgb(255, 255, 255);
 
 // Typography
 @font-face {
@@ -16,6 +16,7 @@ $clr-accent: (255, 255, 255);
 	font-weight: normal;
 	font-style: normal;
 }
+
 $ff-primary: 'Bellefair', serif;
 $ff-secondary: 'Barlow Condensed', sans-serif;
 // Font sizes
@@ -45,13 +46,17 @@ body {
 
 .lp-main-btn-wrapper {
 	background-color: $clr-secondary;
-	cursor: pointer;
+	border-radius: 50%;
+	width: 250px;
+	height: 250px;
 
 	.lp-main-btn {
-		position: relative;
+		border: 0px;
+		border-radius: 50%;
 		width: 250px;
 		height: 250px;
 		background-color: white;
+		cursor: pointer;
 	}
 	:hover {
 		width: 500px;
@@ -99,5 +104,33 @@ body {
 
 	.navigation-tabs {
 		padding: 1rem 0;
+	}
+}
+
+#header-container {
+	display: flex;
+	margin: 0.5rem 0.5rem 0;
+	padding: 0;
+	justify-content: space-between;
+
+	#navigation-links-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: $clr-secondary;
+		li {
+			padding: 0.5rem 1rem;
+			list-style: none;
+			border-bottom: 1px solid transparent;
+			a {
+				color: $clr-accent;
+				background-color: transparent;
+				text-decoration: none;
+			}
+
+			:hover {
+				border-bottom: 0.5rem solid white;
+			}
+		}
 	}
 }
