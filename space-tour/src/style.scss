@@ -1,44 +1,103 @@
-$fs-h1: 9.375rem;
-:root {
-	// colors
-	--clr-primary: rgb(11, 13, 23);
-	--clr-secondary: rgb(208, 214, 249);
-	--clr-accent: (255, 255, 255);
+// Colors
+$clr-primary: rgb(11, 13, 23);
+$clr-secondary: rgb(208, 214, 249);
+$clr-accent: (255, 255, 255);
 
-	// typography
-	@font-face {
-		font-family: 'Barlow Condensed', sans-serif;
-		font-family: 'Bellefair', serif;
-		src: url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&family=Bellefair&display=swap');
-		font-weight: normal;
-		font-style: normal;
-	}
-
-	--ff-primary: 'Barlow Condensed', sans-serif;
-	--ff-secondary: 'Bellefair', serif;
-
-	--fs: 16px;
-
-	--fs-h1: 9.375rem;
-	--fs-h2: 3.5rem;
-	--fs-h3: 6.25rem;
-	--fs-h4: 2rem;
-	--fs-h5: 1.75rem;
-	--fs-subheading1: 1.75rem;
-	--fs-subheading2: 0.875rem;
-	--fs-reg: 1rem;
-	--word-spacing-h5: 0.296875rem;
-	--word-spacing-subheading2: 0.146875rem;
-	--word-spacing-reg: 0.16875rem;
+// Typography
+@font-face {
+	font-family: 'Barlow Condensed', sans-serif;
+	src: url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+	font-weight: normal;
+	font-style: normal;
 }
+@font-face {
+	font-family: 'Bellefair', serif;
+	src: url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+	font-weight: normal;
+	font-style: normal;
+}
+$ff-primary: 'Bellefair', serif;
+$ff-secondary: 'Barlow Condensed', sans-serif;
+// Font sizes
+$fs: 16px;
+$fs-h1: 9.375rem;
+$fs-h2: 3.5rem;
+$fs-h3: 6.25rem;
+$fs-h4: 2rem;
+$fs-h5: 1.75rem;
+$fs-subheading1: 1.75rem;
+$fs-subheading2: 0.875rem;
+$fs-reg: 1rem;
+$word-spacing-h5: 0.296875rem;
+$word-spacing-subheading2: 0.146875rem;
+$word-spacing-reg: 0.16875rem;
+
 body {
 	font-size: var(--fs);
-	font-family: var(--ff-primary);
 }
+
 .container {
-	font-family: var(--ff-primary);
+	font-family: $ff-primary;
 }
 .title {
 	font-size: $fs-h1;
-	color: red;
+}
+
+.lp-main-btn-wrapper {
+	background-color: $clr-secondary;
+	cursor: pointer;
+
+	.lp-main-btn {
+		position: relative;
+		width: 250px;
+		height: 250px;
+		background-color: white;
+	}
+	:hover {
+		width: 500px;
+		height: 500px;
+	}
+}
+
+.slider-circle-sm {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	cursor: pointer;
+	background-color: $clr-primary;
+
+	:hover {
+		background-color: $clr-secondary;
+	}
+
+	:active {
+		background-color: $clr-accent;
+	}
+	.slider-circle-lg {
+		width: 250px;
+		height: 250px;
+	}
+}
+
+.tabs {
+	width: 50px;
+	height: 50px;
+	padding: 0.5rem 0;
+	background-color: $clr-primary;
+	color: $clr-accent;
+	cursor: pointer;
+
+	:hover {
+		border-bottom: 1px solid $clr-secondary;
+	}
+
+	:active {
+		background-color: $clr-accent;
+		color: $clr-primary;
+		border-bottom: 1px solid $clr-accent;
+	}
+
+	.navigation-tabs {
+		padding: 1rem 0;
+	}
 }
