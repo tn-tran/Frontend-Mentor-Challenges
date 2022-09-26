@@ -1,32 +1,136 @@
-:root {
-	// colors
-	--clr-primary: rgb(11, 13, 23);
-	--clr-secondary: rgb(208, 214, 249);
-	--clr-accent: (255, 255, 255);
+// Colors
+$clr-primary: rgb(11, 13, 23);
+$clr-secondary: rgb(208, 214, 249);
+$clr-accent: rgb(255, 255, 255);
 
-	// typography
-	@font-face {
-		font-family: 'Barlow Condensed', sans-serif;
-		font-family: 'Bellefair', serif;
-		src: url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&family=Bellefair&display=swap');
-		font-weight: normal;
-		font-style: normal;
+// Typography
+@font-face {
+	font-family: 'Barlow Condensed', sans-serif;
+	src: url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Bellefair', serif;
+	src: url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+	font-weight: normal;
+	font-style: normal;
+}
+
+$ff-primary: 'Bellefair', serif;
+$ff-secondary: 'Barlow Condensed', sans-serif;
+// Font sizes
+$fs: 16px;
+$fs-h1: 9.375rem;
+$fs-h2: 3.5rem;
+$fs-h3: 6.25rem;
+$fs-h4: 2rem;
+$fs-h5: 1.75rem;
+$fs-subheading1: 1.75rem;
+$fs-subheading2: 0.875rem;
+$fs-reg: 1rem;
+$word-spacing-h5: 0.296875rem;
+$word-spacing-subheading2: 0.146875rem;
+$word-spacing-reg: 0.16875rem;
+
+body {
+	font-size: var(--fs);
+}
+
+.container {
+	font-family: $ff-primary;
+}
+.title {
+	font-size: $fs-h1;
+}
+
+.lp-main-btn-wrapper {
+	background-color: $clr-secondary;
+	border-radius: 50%;
+	width: 250px;
+	height: 250px;
+
+	.lp-main-btn {
+		border: 0px;
+		border-radius: 50%;
+		width: 250px;
+		height: 250px;
+		background-color: white;
+		cursor: pointer;
+	}
+	:hover {
+		width: 500px;
+		height: 500px;
+	}
+}
+
+.slider-circle-sm {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	cursor: pointer;
+	background-color: $clr-primary;
+
+	:hover {
+		background-color: $clr-secondary;
 	}
 
-	--ff-primary: 'Barlow Condensed', sans-serif;
-	--ff-secondary: 'Bellefair', serif;
+	:active {
+		background-color: $clr-accent;
+	}
+	.slider-circle-lg {
+		width: 250px;
+		height: 250px;
+	}
+}
 
-	--fs: 16px;
+.tabs {
+	width: 50px;
+	height: 50px;
+	padding: 0.5rem 0;
+	background-color: $clr-primary;
+	color: $clr-accent;
+	cursor: pointer;
 
-	--fs-h1: 9.375rem;
-	--fs-h2: 3.5rem;
-	--fs-h3: 6.25rem;
-	--fs-h4: 2rem;
-	--fs-h5: 1.75rem;
-	--fs-subheading1: 1.75rem;
-	--fs-subheading2: 0.875rem;
-	--fs-reg: 1rem;
-	--word-spacing-h5: 0.296875rem;
-	--word-spacing-subheading2: 0.146875rem;
-	--word-spacing-reg: 0.16875rem;
+	:hover {
+		border-bottom: 1px solid $clr-secondary;
+	}
+
+	:active {
+		background-color: $clr-accent;
+		color: $clr-primary;
+		border-bottom: 1px solid $clr-accent;
+	}
+
+	.navigation-tabs {
+		padding: 1rem 0;
+	}
+}
+
+#header-container {
+	display: flex;
+	margin: 0.5rem 0.5rem 0;
+	padding: 0;
+	justify-content: space-between;
+
+	#navigation-links-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: $clr-secondary;
+		li {
+			padding: 0.5rem 1rem;
+			list-style: none;
+			border-bottom: 1px solid transparent;
+			a {
+				color: $clr-accent;
+				background-color: transparent;
+				text-decoration: none;
+			}
+
+			:hover {
+				border-bottom: 0.5rem solid white;
+			}
+		}
+	}
 }
