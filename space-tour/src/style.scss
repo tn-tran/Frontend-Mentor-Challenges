@@ -7,14 +7,10 @@ $clr-accent: rgb(255, 255, 255);
 @font-face {
 	font-family: 'Barlow Condensed', sans-serif;
 	src: url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
-	font-weight: normal;
-	font-style: normal;
 }
 @font-face {
 	font-family: 'Bellefair', serif;
 	src: url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
-	font-weight: normal;
-	font-style: normal;
 }
 
 $ff-primary: 'Bellefair', serif;
@@ -34,11 +30,26 @@ $word-spacing-subheading2: 0.146875rem;
 $word-spacing-reg: 0.16875rem;
 
 body {
-	font-size: var(--fs);
+	font-size: $fs;
+	background-color: $clr-primary;
+	color: $clr-accent;
+}
+.text-h1 {
+	font-family: $ff-primary;
+	font-size: $fs-h1;
+}
+.text-h5 {
+	font-family: $ff-secondary;
+	font-size: $fs-h5;
+	letter-spacing: $word-spacing-h5;
+	color: $clr-secondary;
 }
 
+.text-p {
+	font-family: $ff-secondary;
+	font-size: $fs-reg;
+}
 .container {
-	font-family: $ff-primary;
 }
 .title {
 	font-size: $fs-h1;
@@ -58,10 +69,10 @@ body {
 		background-color: white;
 		cursor: pointer;
 	}
-	:hover {
-		width: 500px;
-		height: 500px;
-	}
+	// :hover {
+	// 	width: 500px;
+	// 	height: 500px;
+	// }
 }
 
 .slider-circle-sm {
@@ -112,11 +123,13 @@ body {
 	margin: 0.5rem 0.5rem 0;
 	padding: 0;
 	justify-content: space-between;
+	align-items: center;
 
 	#navigation-links-container {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		padding: 0;
 		background-color: $clr-secondary;
 		li {
 			padding: 0.5rem 1rem;
@@ -133,4 +146,16 @@ body {
 			}
 		}
 	}
+
+	#gray-line {
+		width: 50%;
+		margin: auto;
+		margin-top: 5%;
+		margin-bottom: 5%;
+		border: 1px solid gray;
+	}
+}
+
+#hero-cta-container {
+	display: flex;
 }
