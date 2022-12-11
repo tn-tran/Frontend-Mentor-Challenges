@@ -33,3 +33,11 @@ $clr-very-dark-grayish-blue: hsl(237, 14%, 26%);
 
 /* Font Size */
 $fs: 1.125rem;
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
