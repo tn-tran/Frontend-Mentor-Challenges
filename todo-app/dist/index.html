@@ -13,30 +13,35 @@
 		/>
 		<script src="main.js"></script>
 		<title>Frontend Mentor | Todo app</title>
-
-		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-		<style>
-			.attribution {
-				font-size: 11px;
-				text-align: center;
-			}
-			.attribution a {
-				color: hsl(228, 45%, 44%);
-			}
-		</style>
 	</head>
 	<body>
-		Todo
+		<div class="todo-container">
+			Todo
+			<button class="dark-mode-toggle"></button>
+		</div>
+		<div class="create-new-todo-container">
+			<input type="checkbox" class="checkbox" checked />
+			<input
+				type="text"
+				name=""
+				id=""
+				class="create-new-todo"
+				placeholder="Create a new todo.."
+			/>
+		</div>
 
-		<!-- Add dynamic number -->
-		items left All Active Completed Clear Completed Drag and drop to reorder
-		list
+		<div id="todo-last-row">
+			<div id="todo-last-row__items-left-container">0 items left</div>
+			<div id="todo-last-row__active-container">All Active Completed</div>
+			<div id="todo-last-row__clear-completed-container">Clear Completed</div>
+		</div>
+		<footer>Drag and drop to reorder list</footer>
 
 		<div class="attribution">
 			Challenge by
 			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
 				>Frontend Mentor</a
-			>. Coded by <a href="#">Your Name Here</a>.
+			>. Coded by <a href="#">Tien Tran</a>.
 		</div>
 	</body>
 </html>
