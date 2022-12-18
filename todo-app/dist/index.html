@@ -16,34 +16,44 @@
 	</head>
 	<body>
 		<div class="container">
-			<div class="todo-title-container">
-				<div class="todo-title">Todo</div>
-				<button class="dark-mode-toggle"></button>
-			</div>
-			<div class="create-new-todo-container">
-				<input type="checkbox" class="checkbox" checked />
-				<input
-					type="text"
-					name=""
-					id=""
-					class="create-new-todo"
-					placeholder="Create a new todo.."
+			<div class="image-container">
+				<img
+					id="image"
+					src="../src/images/bg-desktop-light.jpg"
+					alt=""
+					srcset=""
 				/>
 			</div>
-			<div class="todo-container">
-				<div class="todo-row">
+			<div class="body-container">
+				<div class="todo-title-container">
+					<div class="todo-title">Todo</div>
 					<button class="dark-mode-toggle"></button>
-					<div class="todo-text">Example Todo</div>
 				</div>
-				<div id="todo-last-row">
-					<div id="todo-last-row__items-left-container">0 items left</div>
-					<div id="todo-last-row__active-container">All Active Completed</div>
-					<div id="todo-last-row__clear-completed-container">
-						Clear Completed
+				<div class="create-new-todo-container">
+					<input type="checkbox" class="checkbox" checked />
+					<input
+						type="text"
+						name=""
+						id=""
+						class="create-new-todo"
+						placeholder="Create a new todo.."
+					/>
+				</div>
+				<div class="todo-container">
+					<div class="todo-row">
+						<button class="dark-mode-toggle"></button>
+						<div class="todo-text">Example Todo</div>
+					</div>
+					<div id="todo-last-row">
+						<div id="todo-last-row__items-left-container">0 items left</div>
+						<div id="todo-last-row__active-container">All Active Completed</div>
+						<div id="todo-last-row__clear-completed-container">
+							Clear Completed
+						</div>
 					</div>
 				</div>
+				<div class="drag-and-drop-container">Drag and drop to reorder list</div>
 			</div>
-			<div class="drag-and-drop-container">Drag and drop to reorder list</div>
 		</div>
 
 		<div class="attribution">
