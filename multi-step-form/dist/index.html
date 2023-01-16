@@ -1,198 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!-- displays site properly based on user's device -->
 
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="32x32"
-			href="./images/favicon-32x32.png"
-		/>
-		<title>Frontend Mentor | Multi-step form</title>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- displays site properly based on user's device -->
 
-		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-		<style>
-			.attribution {
-				font-size: 11px;
-				text-align: center;
-			}
-			.attribution a {
-				color: hsl(228, 45%, 44%);
-			}
-		</style>
-		<script src="main.js"></script>
-	</head>
-	<body>
-		<!-- Sidebar start -->
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+	<title>Frontend Mentor | Multi-step form</title>
 
-		<div>
-			<div id="sidebar">
-				Step 1 Your info Step 2 Select plan Step 3 Add-ons Step 4 Summary
-			</div>
-			<!-- Sidebar end -->
-			<!-- Step 1 start -->
-			<div class="header">
-				<div class="header-title">Personal info</div>
-				<div class="header-subtitle">
-					Please provide your name, email address, and phone number.
-				</div>
-			</div>
-			<div>
-				<form action="" class="form">
-					<label for="form__name">Name</label>
-					<input
-						type="text"
-						id="form__name"
-						name="form__name"
-						placeholder="e.g. Stephen King"
-						required
-					/>
-					<label for="form__email">Email Address</label>
-					<input
-						type="text"
-						id="form__email"
-						name="form__email"
-						placeholder="e.g. stephenking@lorem.com"
-						required
-					/>
-					<label for="form__phone">Phone Number</label>
-					<input
-						type="text"
-						name="form__phone"
-						id="form__phone"
-						placeholder=" e.g. +1 234 567 890 Next Step"
-						required
-					/>
-				</form>
-			</div>
-			<!-- Step 1 end -->
-			<!-- Step 2 start -->
-			<div class="header">
-				<div class="header-title">Select your plan</div>
-				<div class="header-subtitle">
-					You have the option of monthly or yearly billing.
-				</div>
-			</div>
-			<form action="">
-				<div class="form__plan">
-					<div class="form__selectplan">
-						<p class="form__selectplan__header">Arcade</p>
-						<p class="form__selectplan__subttitle">$9/yr</p>
-						<p class="form__selectplan__twomonthsfree-text">2 months free</p>
-					</div>
-					<div class="form__selectplan">
-						<p class="form__selectplan__header">Advanced</p>
-						<p class="form__selectplan__subttitle">$12/yr</p>
-						<p class="form__selectplan__twomonthsfree-text">2 months free</p>
-					</div>
-					<div class="form__selectplan">
-						<p class="form__selectplan__header">Pro</p>
-						<p class="form__selectplan__subttitle">$150/yr</p>
-						<p class="form__selectplan__twomonthsfree-text">2 months free</p>
-					</div>
-				</div>
-				<div class="monthly-yearly-container">
-					<p class>Monthly</p>
-					<label for="" class="switch">
-						<input type="checkbox" value="" />
-					</label>
-					<p class>Yearly</p>
-				</div>
-			</form>
-			<button class="go-back-button">Go Back</button>
-			<button class="next-step-button">Next Step</button>
+	<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+	<style>
+		.attribution {
+			font-size: 11px;
+			text-align: center;
+		}
 
-			<!-- Step 2 end -->
-			<!-- Step 3 start -->
-			<div class="header">
-				<div class="header-title">Pick add-ons</div>
-				<div class="header-subtitle">
-					Add-ons help enhance your gaming experience.
-				</div>
-			</div>
-			<form action="">
-				<div class="form__plan">
-					<div class="form__selectplan">
-						<input type="checkbox" />
-						<span class="form__selectplan__title">Online service</span>
-						<span class="form__selectplan__subtitle"
-							>Access to multiplayer games</span
-						>
-						<span class="form__selectplan__yearly">+$10/yr</span>
-					</div>
-					<div class="form__selectplan">
-						<span class="form__selectplan__title">Larger storage</span>
-						<span class="form__selectplan__subtitle"
-							>Extra 1TB of cloud save</span
-						>
-						<span class="form__selectplan__yearly">+$20/yr</span>
-					</div>
-					<div class="form__selectplan">
-						<span class="form__selectplan__title">Customizable profile</span>
-						<span class="form__selectplan__subtitle"
-							>Custom theme on your profile</span
-						>
-						<span class="form__selectplan__yearly">+$20/yr</span>
-					</div>
-				</div>
-			</form>
-			<button class="go-back-button">Go Back</button>
-			<button class="next-step-button">Next Step</button>
+		.attribution a {
+			color: hsl(228, 45%, 44%);
+		}
+	</style>
+	<script src="main.js"></script>
+</head>
 
-			<div class="header">
-				<div class="header-title">Finishing up</div>
-				<div class="header-subtitle">
-					Double-check everything looks OK before confirming.
-				</div>
-			</div>
-			<div class="checkout-items-container">
-				<div class="checkout-items-container__plan-container">
-					<span class="checkout-items-container__plan">Arcade (Yearly)</span>
-					<button class="checkout-items__change-button">Change</button>
-					<p class="checkout-items_cost">$90/y</p>
-				</div>
-			</hr>
-			<div>
-				<p class="checkout-items__services">Online service</p>
-				<p class="checkout-items__services_cost-text">+$10/yr</p>
-			</div>
-			<div>
-				<p class="checkout-items__services">Large storage</p>
-				<p class="checkout-items__services_cost-text">+$20/yr</p>
-			</div>
-			</div>
-			<div class="total-cost-container">Total (per month/year)</div>
-			<button class="go-back-button">Go Back</button>
-			<button class="confirm-button">Confirm</button>
-
-			<!-- Step 3 end -->
-			<!-- Step 4 start -->
-
-			<!-- Dynamically add subscription and add-on selections here -->
-
-			<!-- Step 4 end -->
-			<!-- Step 5 start -->
-			<div class="thank-you-container">
-				<img src="" alt="" />
-				<div class="thank-you_header-text">Thank you!</div>
-				<div class="thank-you_sub-text">
-					Thanks for confirming your subscription! We hope you have fun using
-					our platform. If you ever need support, please feel free to email us
-					at support@loremgaming.com.
-				</div>
+<body>
+	<div>
+		<div id="sidebar">
+			Step 1 Your info Step 2 Select plan Step 3 Add-ons Step 4 Summary
+		</div>
+		<div class="header">
+			<div class="header-title">Personal info</div>
+			<div class="header-subtitle">
+				Please provide your name, email address, and phone number.
 			</div>
 		</div>
-
-		<!-- Step 5 end -->
+		<div>
+			<form action="" class="form">
+				<label for="form__name">Name</label>
+				<input type="text" id="form__name" name="form__name" placeholder="e.g. Stephen King" required />
+				<label for="form__email">Email Address</label>
+				<input type="text" id="form__email" name="form__email" placeholder="e.g. stephenking@lorem.com" required />
+				<label for="form__phone">Phone Number</label>
+				<input type="text" name="form__phone" id="form__phone" placeholder=" e.g. +1 234 567 890 Next Step" required />
+			</form>
+		</div>
 
 		<div class="attribution">
 			Challenge by
-			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-				>Frontend Mentor</a
-			>. Coded by <a href="#">Your Name Here</a>.
+			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
+				href="#">Your
+				Name Here</a>.
 		</div>
-	</body>
+</body>
+
 </html>

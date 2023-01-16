@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <title>Frontend Mentor | Multi-step form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <div>
+    <div id="sidebar">
+      Step 1 Your info Step 2 Select plan Step 3 Add-ons Step 4 Summary
+    </div>
+    <div class="header">
+      <div class="header-title">Pick add-ons</div>
+      <div class="header-subtitle">
+        Add-ons help enhance your gaming experience.
+      </div>
+    </div>
+    <form action="">
+      <div class="form__plan">
+        <div class="form__selectplan">
+          <input type="checkbox" />
+          <span class="form__selectplan__title">Online service</span>
+          <span class="form__selectplan__subtitle">Access to multiplayer games</span>
+          <span class="form__selectplan__yearly">+$10/yr</span>
+        </div>
+        <div class="form__selectplan">
+          <span class="form__selectplan__title">Larger storage</span>
+          <span class="form__selectplan__subtitle">Extra 1TB of cloud save</span>
+          <span class="form__selectplan__yearly">+$20/yr</span>
+        </div>
+        <div class="form__selectplan">
+          <span class="form__selectplan__title">Customizable profile</span>
+          <span class="form__selectplan__subtitle">Custom theme on your profile</span>
+          <span class="form__selectplan__yearly">+$20/yr</span>
+        </div>
+      </div>
+    </form>
+    <button class="go-back-button">Go Back</button>
+    <button class="next-step-button">Next Step</button>
+
+    <div class="header">
+      <div class="header-title">Finishing up</div>
+      <div class="header-subtitle">
+        Double-check everything looks OK before confirming.
+      </div>
+    </div>
+    <div class="checkout-items-container">
+      <div class="checkout-items-container__plan-container">
+        <span class="checkout-items-container__plan">Arcade (Yearly)</span>
+        <button class="checkout-items__change-button">Change</button>
+        <p class="checkout-items_cost">$90/y</p>
+      </div>
+      </hr>
+      <div>
+        <p class="checkout-items__services">Online service</p>
+        <p class="checkout-items__services_cost-text">+$10/yr</p>
+      </div>
+      <div>
+        <p class="checkout-items__services">Large storage</p>
+        <p class="checkout-items__services_cost-text">+$20/yr</p>
+      </div>
+    </div>
+    <div class="total-cost-container">Total (per month/year)</div>
+    <button class="go-back-button">Go Back</button>
+    <button class="confirm-button">Confirm</button>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
+        href="#">Your Name Here</a>.
+    </div>
+</body>
+
+</html>
